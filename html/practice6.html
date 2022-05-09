@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정보입력</title>
+</head>
+
+<body>
+    <h3>1 정보입력</h3>
+    <form action="/action_page.php" id="form1">
+        <input type="text" id="fname" name="fname" placeholder="이름"><br><br>
+
+        <input type="text" id="fname" name="fname" placeholder="아이디"><br><br>
+
+        <input type="password" id="fname" name="fname" placeholder="비밀번호">
+        <a href="">비밀번호 도움말</a><br>
+        <input type="password" id="fname" name="fname" placeholder="비밀번호 재입력"><br><br>
+        <input type="tel" id="fname" name="fname" placeholder="전화번호" size="5">
+        <input type="tel" id="fname" name="fname" placeholder="전화번호" size="5">
+        <input type="tel" id="fname" name="fname" placeholder="전화번호" size="5">
+        <br><br>
+        <select name="tel" id="tel">
+            <option value="휴대폰번호선택">휴대폰번호선택</option>
+            <option value="010">010</option>
+            <option value="011">011</option>
+            <option value="017">017</option>
+        </select>
+        <input type="tel" id="fname" name="fname" size="5">
+        <input type="tel" id="fname" name="fname" size="5">
+        <button type="button" onclick="alert('잠시후 시도해주세요')">휴대폰 인증</button> <br><br>
+        <input type="text" id="fname" name="fname" placeholder="이메일"> @
+        <select name="mail" id="mail">
+            <option value="gmail.com">gmail.com</option>
+            <option value="naver.com">naver.com</option>
+            <option value="daum.net">daum.net</option>
+            <option value="nate.com">nate.com</option>
+        </select><br><br>
+        <form action="/action_page.php">
+              <input type="radio" id="html" name="fav_language" value="HTML">
+              <label for="html">인증받은 휴대폰 번호를 대표번호로 사용</label>
+              <input type="radio" id="css" name="fav_language" value="CSS">
+              <label for="css">다른번호 등록</label>
+              <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+              <label for="javascript">다음에 등록함</label><br><br>
+            <input type="tel" id="fname" name="fname" placeholder="우편번호">
+            <button type="button" onclick="alert('잠시후 시도해주세요')">주소찾기</button> <br><br>
+            <input type="submit" value="가입신청" style="background-color: red; color: white; width: 100px; height: 50px ;">
+            <input type="reset" value="취소" style=" width: 100px; height: 50px ;">
+        </form>
+</body>
+
+</html>
