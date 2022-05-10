@@ -1,0 +1,16 @@
+div.a {
+    text-align: center;
+    color: aqua;
+}
+div.b {
+    text-align: left;
+    color: burlywood;
+}
+div.c {
+    text-align: right;
+    color: brown;
+}
+div.d {
+    text-align: justify;
+    color: darkgreen;
+}

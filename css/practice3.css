@@ -1,0 +1,9 @@
+/* class 셀렉터 */
+.divdeclare{
+    color : green;
+}
+
+/* id 셀렉터 */
+#div1 {
+    background-color: aqua;
+}

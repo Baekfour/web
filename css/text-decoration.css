@@ -1,0 +1,19 @@
+.overlineprac{
+text-decoration: overline;
+}
+
+.linethroughprac{
+    text-decoration: line-through;
+}
+
+.underlineprac{
+    text-decoration: underline;
+}
+
+.uppercaseprac{
+    text-transform: uppercase;
+}
+
+.lowercaseprac{
+    text-transform: lowercase;
+}

@@ -1,0 +1,29 @@
+p.a {
+    font-family: "Times New Roman", Times, serif;
+    font-style: normal;
+    font-size: 15px;
+}
+
+p.b {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: large;
+}
+
+p.c {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-size: 150%;
+}
+
+p.d {
+    font-family: "Times New Roman", Times, serif;
+    font-style: oblique;
+    line-height: 1.6;
+}
+
+p.e {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    line-height: 200%;
+}
