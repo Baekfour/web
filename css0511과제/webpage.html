@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            background-image: url(https://data.ygosu.com/upload_files/board_yeobgi/1190913/590894a51f07a.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .header {
+            background-color: rgb(53, 51, 51);
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            color: white;
+            padding: 10px;
+        }
+        .menu1{
+            position: fixed;
+            right: 330px;
+            color: white;
+            top: 10px;
+        }
+        .menu2{
+            position: fixed;
+            right: 230px;
+            color: white;
+            top: 10px;
+        }
+        .menu3{
+            position: fixed;
+            right: 130px;
+            color: white;
+            top: 10px;
+        }
+        .menu4{
+            position: fixed;
+            right: 30px;
+            color: white;
+            top: 10px;
+        }
+        .about {
+            position: absolute;
+            top: 40%;
+            left: 35%;
+            color: white;
+            font-size: 40px;
+        }
+
+        .button{
+            position: absolute;
+            top: 60%;
+            left: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="header" >
+        ★
+        <div class="menu1">
+            Home 
+        </div>
+        <div class="menu2">
+            About
+        </div>
+        <div class="menu3">
+            Projects
+        </div>
+        <div class="menu4">
+            Contact
+        </div>
+    </p>
+    <div class="about">
+        안녕하세요. 제 이름은 <span style="color: red"> 백승우입니다.</span> 
+        <div>저는 프론트엔드 개발자입니다.</div>
+    </div>
+    <form class="button" action="view all" >
+        <input type="button" value="view my work" style="width: 150px; height:43px; background-color: rgba(0,0,0,0); color: white; border-color: white;">
+    </form>
+</body>
+
+</html>
