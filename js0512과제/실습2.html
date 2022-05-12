@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 숫자 입력 창
+        var num = Number(prompt('숫자를 입력해 주세요'))
+        if(num >=1 && num <= 100) {
+            // 모든 조건이 성립하면 1부터 100까지 콘솔창에 입력 후
+            // '완료되었습니다' 라는 경고창 띄우기
+            for(var i = 1; i <= 100; i++){
+                console.log(i);
+            } alert('완료되었습니다')
+        }
+        // 숫자가 1보다 작고 100보다 클 때 
+        // '1이상 100 이하를 넣어주세요' 경고창  
+        else if(num > 100 || num < 1){
+            alert('1이상 100 이하를 넣어주세요')
+        } 
+        // 그 이외에 숫자를 입력해 주세요 경고창
+        else{
+            alert('숫자를 입력해 주세요')
+        }
+    </script>
+</body>
+</html>

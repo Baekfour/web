@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .background {
+        margin: 10px;
+        width: 150px;
+        position: relative;
+        top: 50px;
+        left: 45%;
+        background-color: rgb(173, 169, 169);
+        padding: 30px;
+        border: 1px solid;
+        border-color: black;
+        color: white;
+    }
+</style>
+<script>
+    function changeColor1() {
+        document.getElementById("1").style.backgroundColor = " rgb(173, 169, 169)"
+        document.getElementById("1").style.color = " white";
+        document.getElementById("2").style.backgroundColor = "white";
+        document.getElementById("2").style.color = " black";
+        document.getElementById("3").style.backgroundColor = "white";
+        document.getElementById("3").style.color = "black";
+    }
+    function changeColor2() {
+        document.getElementById("1").style.backgroundColor = "white";
+        document.getElementById("1").style.color = " black";
+        document.getElementById("2").style.backgroundColor = " rgb(173, 169, 169)"
+        document.getElementById("2").style.color = " white";
+        document.getElementById("3").style.backgroundColor = "white";
+        document.getElementById("3").style.color = " black";
+    }
+    function changeColor3() {
+        document.getElementById("1").style.backgroundColor = "white";
+        document.getElementById("1").style.color = " black";
+        document.getElementById("2").style.backgroundColor = "white";
+        document.getElementById("2").style.color = " black";
+        document.getElementById("3").style.backgroundColor = " rgb(173, 169, 169)"
+        document.getElementById("3").style.color = " white";
+    }
+</script>
+
+<body>
+    <button id="1" class="background" onclick="changeColor1()">html</button>
+    <button id="2" class="background" onclick="changeColor2()">css</button>
+    <button id="3" class="background" onclick="changeColor3()">javascript</button>
+</body>
+
+</html>
