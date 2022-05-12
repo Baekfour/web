@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function addTag() {
+        document.write('<h1>Hello World</h1>');
+    }
+    function getTitle() {
+        let title = document.getElementById('title');
+            alert(title.textContent); //텍스트 얻기
+    }
+</script>
+
+<body>
+    <button onclick="addTag()">TAG 추가</button>
+    <button id="title" onclick="getTitle()">Title 얻기</button>
+    
+</body>
+
+</html>
