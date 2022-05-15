@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<Style>
+    .header{
+        background-color: rgb(130, 130, 240);
+        color: white;
+        padding: 10px;
+    }
+    .content{
+        background-color: rgb(192, 191, 191);
+        padding: 10px;
+    }
+    .item{
+      position: relative;
+        left: -40px;
+        background-color: white;
+        margin: 10px;
+        padding: 5px;
+        width: 150px;
+    }
+    .container{
+        width: 200px;
+    }
+    .inputprompt{
+      background-color: white;
+        margin: 10px;
+        padding: 5px;
+    }
+</Style>
+<script>
+  $(function () {
+        $("#submit").click(function () {
+         let articlename = prompt('기사제목을 입력하세요')
+         let article = prompt('기사내용을 입력하세요')
+         let newarticle = "<div class = item>" + "<b>" + articlename + "</b>" +  " " + article + "</div>"
+         $("ol").append(newarticle)
+        })
+      })
+</script>
+<body>
+    <div class="container">
+        <div class="header">
+            기사 등록하기
+        </div>
+        <div class="content">
+            <b>페이스북 색감 따라하기</b>
+            <ol>
+                <div class="item"><b>박지성</b> SBS에서 월드컵 보세요!</div>
+                <div class="item"><b>안정환</b> MBC죠..</div>
+                <div class="item"><b>이영표</b> KBS는 수신료의 가치를..</div>
+            </ol>
+        </div>
+    </div>
+    <button id="submit">등록하기</button>
+</body>
+</html>
