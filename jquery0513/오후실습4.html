@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<style>
+  #mario{
+    width: 50px;
+    position: absolute;
+    top: 300px;
+    left: 100px;
+  }
+  #bomb{
+    width: 70px;
+    position: absolute;
+    top: 330px;
+    left: 800px;
+
+  }
+</style>
+<script>
+  window.onkeydown = function () {
+    if (event.keyCode == 32) {
+      $(function () {
+        $('#mario').animate({
+          top: '-=150px'
+        }).animate({
+          top: '+=150px'
+        })
+      })
+    }}
+    $(function moveInfinit(){
+      $('#bomb').animate({
+        left:-100
+      },2000,function(){
+        $('#bomb').animate({
+          top: 330, left:800},0,moveInfinit);
+        });
+      });
+    
+
+</script>
+<body>
+  <img id="mario" src="../mario2.jpg" alt="마리오" >
+  <img id="bomb" src="../bomb.jpg" alt="마리오" >
+</body>
+</html>
