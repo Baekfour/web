@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<style>
+    .box{
+        margin: 10px;
+        width: 150px;
+        position: relative;
+        top: 50px;
+        left: 15%;
+        background-color: rgb(77, 74, 74);
+        padding: 30px;
+        border: 1px solid;
+        border-color: black;
+        color: white;
+        font-size: 20px;
+    }
+</style>
+<script>
+    $(function () {
+      $("#html").click(function(){
+        $(html).css("background-color","white");
+        $(html).css("color","black");
+        $(css).css("background-color","rgb(77, 74, 74)");
+        $(css).css("color","white");
+        $(javascript).css("background-color","rgb(77, 74, 74)");
+        $(javascript).css("color","white");
+      })
+      $("#css").click(function(){
+        $(html).css("background-color","rgb(77, 74, 74)");
+        $(html).css("color","white");
+        $(css).css("background-color","white");
+        $(css).css("color","black");
+        $(javascript).css("background-color","rgb(77, 74, 74)");
+        $(javascript).css("color","white");
+      })
+      $("#javascript").click(function(){
+        $(html).css("background-color","rgb(77, 74, 74)");
+        $(html).css("color","white");
+        $(css).css("background-color","rgb(77, 74, 74)");
+        $(css).css("color","white");
+        $(javascript).css("background-color","white");
+        $(javascript).css("color","black");
+      })
+    })
+</script>
+<body>
+  <button id="html" class="box">html</button>
+  <button id="css" class="box">css</button>
+  <button id="javascript" class="box">javascript</button>
+</body>
+</html>
