@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <style>
+    #inputText {
+      position: absolute;
+      left: 45%;
+      top: 40%;
+      font-size: 100px;
+    }
+    #button {
+      position: absolute;
+      left: 50%;
+      top: 60%;
+      font-size: 20px;
+    }
+  </style>
+  <div id="inputText">
+    <script>
+      let inputText = prompt('텍스트값을 입력해 주세요');
+      if (inputText == '' || inputText == null) {
+        text = alert('텍스트값을 입력해 주세요')
+      }
+      else {
+        document.write(inputText);
+      }
+      $(function () {
+        $("#redButton").click(function () {
+          alert('빨간색으로 변경됩니다')
+          $("#inputText").css('color', 'red');
+        })
+      })
+      $(function () {
+        $("#blueButton").click(function () {
+          alert('파란으로 변경됩니다')
+          $("#inputText").css('color', 'blue');
+        })
+      })
+      $(function () {
+        $("#greenButton").click(function () {
+          alert('초록색으로 변경됩니다')
+          $("#inputText").css('color', 'green');
+        })
+      })
+    </script>
+  </div>
+  <div id="button">
+    <button id="redButton">빨강</button>
+    <button id="blueButton">파랑</button>
+    <button id="greenButton">초록</button>
+  </div>
+</body>
+</html>
