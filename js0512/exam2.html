@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body onload="inputText()">
+  <style>
+    .center-big-text{
+
+    }
+  </style>
+    <script>
+        function inputText(){
+          let text = prompt();
+          if(text == null || text == ''){
+            alert('다시 입력해주세요');
+          } else{
+
+          }
+        }
+
+        function changeColor(dom){
+          console.log(dom);
+        }
+    </script>
+    <h1 class="center-big-text"></h1>
+    <div id="buttons">
+      <button  onclick="changeColor(this)" name="red">빨강</button>
+      <button onclick="changeColor(this)" name="blue">파랑</button>
+      <button onclick="changeColor(this)" name="green">초록</button>
+    </div>
+</body>
+</html>
