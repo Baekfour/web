@@ -16,13 +16,19 @@
         })
       })
       //전체확인 체크박스 해제시 아래의 모든 체크박스를 해제시키는 과정,,, 해결 못함
-      if($('#all_check').is(":checked") == false){
+      if($(this.checked == false)){
         for(let i = 0; i<checkbox[name=mycheck]; i++){
           checkbox[i] = false;
         }
       // 로그버튼 누르면 로그로 선택된 제목만 표시되도록, 선택 없으면 없다고 알림표시
+      
   }})
 </script>
+<style>
+  th, td , table{
+  border-collapse: collapse;
+}
+</style>
 <body>
   <table border="solid 1px green" width = "300" height = "300">
     <tr>
