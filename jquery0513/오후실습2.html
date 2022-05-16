@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<script>
+  $(function(){
+    // 전체 체크박스 체크
+    $('#all_check').click(function(){
+        $(':checkbox[name=mycheck]').each(function(){
+          this.checked = true;
+        })
+      })
+      //전체확인 체크박스 해제시 아래의 모든 체크박스를 해제시키는 과정,,, 해결 못함
+      if($('#all_check').is(":checked") == false){
+        for(let i = 0; i<checkbox[name=mycheck]; i++){
+          checkbox[i] = false;
+        }
+      // 로그버튼 누르면 로그로 선택된 제목만 표시되도록, 선택 없으면 없다고 알림표시
+  }})
+</script>
+<body>
+  <table border="solid 1px green" width = "300" height = "300">
+    <tr>
+      <td><input type="checkbox" id="all_check" >확인</td>
+      <td>제목</td>
+      <td>글쓴시간</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="mycheck" id=""></td>
+      <td>1111</td>
+      <td>11:11:00</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="mycheck" id=""></td>
+      <td>2222</td>
+      <td>11:11:00</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="mycheck" id=""></td>
+      <td>ㅁㄴㅇㄻㄴㅇㄹ</td>
+      <td>11:11:00</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="mycheck" id=""></td>
+      <td>ㅁㄴㅇㄻㄴ333</td>
+      <td>11:11:00</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="mycheck" id=""></td>
+      <td>ㅁ11111ㄴㅁ윤</td>
+      <td>11:11:00</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="mycheck" id=""></td>
+      <td>ㅁㄴㅇㄹ555ㄴㅇ</td>
+      <td>11:11:00</td>
+    </tr>
+  </table>
+</body>
+</html>
