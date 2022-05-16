@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<style>
+  .indexSize {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+  }
+  .inputBox {
+    width: 300px;
+    height: 30px;
+  }
+  .buttonSize{
+    position: absolute;
+    top: 35%;
+    left: 25%;
+  }
+  .buttonSize2{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+  }
+</style>
+
+<body>
+  <form action="/action_page.php" id="form1">
+  <div class="indexSize"> 아이디</div>
+  <input class="inputBox" type="email">
+  <p></p>
+
+  <div class="indexSize"> 비밀번호</div>
+  <input class="inputBox" type="password">
+  <p></p>
+
+  <div class="indexSize"> 성별</div>
+  <input class="inputBox" id="sex" type="radio" name="Sex" style="width: 20px; height:20px">
+  <label for="sex" >남자</label>
+  <input class="inputBox" id="sex" type="radio" name="Sex" style="width: 20px; height:20px">
+  <label for="sex">여자</label>
+  <p></p>
+  <div class="indexSize"> 직업</div>
+  <select class="inputBox">
+    <option value=null></option>
+    <option value=frontDeveloper>프론트엔드개발자</option>
+    <option value=backDeveloper>백엔드개발자</option>
+    <option value=fullDeveloper>풀스택개발자</option>
+  </select>
+    <p></p>
+    <div class="indexSize"> 아이디</div>
+    <input type="checkbox" name="mycheck" id="">
+    <label for="mycheck">개발</label>
+    <input type="checkbox" name="mycheck" id="">
+    <label for="mycheck">게임</label>
+    <input type="checkbox" name="mycheck" id="">
+    <label for="mycheck">낚시</label>
+    <input type="checkbox" name="mycheck" id="">
+    <label for="mycheck">운동</label>
+    <input type="checkbox" name="mycheck" id="">
+    <label for="mycheck">독서</label>
+    <input type="checkbox" name="mycheck" id="">
+    <label for="mycheck">음악감상</label>
+    <input class="buttonSize" type="reset" value="취소" >
+    <button class="buttonSize2">회원가입</button>
+  </form>
+</body>
+
+</html>
