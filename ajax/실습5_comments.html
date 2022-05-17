@@ -22,12 +22,12 @@
                 .then((data) => {
                     let list = $('#result');
                     for (var i = 0; i < 1; i++) {
-                        list.append(`<div class="card" onclick="moveDetailPage()">
+                        list.append(`<div>
                                         <div class="container">
                                           <h1><b>${data.results[id].title}</b></h1>
                                           <p><b>개봉일 ${data.results[id].release_date}</b></p>
                                           <p><b>평점 ${data.results[id].vote_average}</b></p>
-                                            <h4><img id="poster" src="https://image.tmdb.org/t/p/w500${data.results[id].backdrop_path}"></h4>
+                                            <h4><img id="poster" src="https://image.tmdb.org/t/p/w500${data.results[id].poster_path}"></h4>
                                             <p><b>${data.results[id].overview}</b></p>
                                         </div>
                                     </div>`);
@@ -36,6 +36,20 @@
         });
       
     </script>
+    <style>
+      .container {
+      width: 70%;
+      padding: 2px 16px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 20px;
+      background-color: bisque;
+    }
+      #poster{
+        position: relative;
+        width: 50%;
+        left: 25%;
+      }
+    </style>
     <ul id="result">
 
     </ul>
