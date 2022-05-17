@@ -89,9 +89,9 @@
       border-radius: 80%;
       padding: 10px;
       background-color: rgb(218, 218, 44);
-      border-color: rgb(0, 0, 0,0);
+      border-color: rgb(0, 0, 0, 0);
       color: black;
-      
+
     }
 
     #score {
@@ -111,6 +111,13 @@
         left: -100%;
       }
     }
+
+    #info {
+      position: absolute;
+      left: 30%;
+      top: 110%;
+      font-size: 30px;
+    }
   </style>
 
   <div id="container">
@@ -119,6 +126,7 @@
     <img id="killer" src="../assets/bomb.gif" alt="killer">
     <img id="misile" src="../assets/fireball.jpg" alt="misile">
     <div id="score">SCORE : 0</div>
+    <div id="info">Attack - 'b' button, Jump - 'Space' button</div>
   </div>
   <div id="gameover">
     Game Over
@@ -135,6 +143,7 @@
     </div>
   </div>
   <div>
+
     <script>
       const WIDTH = 1200;
       const HEIGHT = 600;
@@ -290,7 +299,7 @@
       $(function () {
         $("#container").hide();
         gameStart();
-        
+
         $(".game_start_button").click(function () {
           $("#container").show();
           game();
