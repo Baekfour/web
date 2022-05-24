@@ -7,18 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
 </head>
 
 <body>
   <div id="app">
     <input v-model="query" placeholder="검색어">
     <ul>
-      <!-- vuejs for문 형식 -->
       <li v-for="post in filteredPosts">
         {{ post.title }}
+        
       </li>
     </ul>
-    <!-- {{ posts }} -->
   </div>
 
   <script>
@@ -26,12 +26,15 @@
       el: '#app',
       data: {
         query: '',
-        posts: [],  //전체 데이터
-        filteredPosts: [] // 검색 조건에 맞는 데이터만 필터링된것
+        posts: [],  // 전체 데이터
+        filteredPosts: []   // 검색 조건에 맞는 데이터만 필터링
       },
       created: function () {
-        //통신 
+        // 통신
         this.getPosts();
+
+        // 디바운스 적용된 검색 함수 정의
+        this.debouncedSearch = _.debounce(this.search, 500);
       },
       methods: {
         getPosts: function () {
@@ -42,12 +45,14 @@
               v.posts = json;
               v.filteredPosts = json;
             })
+        },
+        search: function (val) {
+          this.filteredPosts = this.posts.filter(post => post.title.includes(val));
         }
       },
       watch: {
         query: function (val) {
-          this.filteredPosts = this.posts.filter(post => post.title.includes(val))
-
+          this.debouncedSearch(val);
         }
       }
     })
