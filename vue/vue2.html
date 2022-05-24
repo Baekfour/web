@@ -11,9 +11,10 @@
 
 <body>
   <div id="app">
+    <input v-model="query" placeholder="검색어">
     <ul>
       <!-- vuejs for문 형식 -->
-      <li v-for="post in posts">
+      <li v-for="post in filteredPosts">
         {{ post.title }}
       </li>
     </ul>
@@ -24,7 +25,9 @@
     let app = new Vue({
       el: '#app',
       data: {
-        posts: []
+        query : '',
+        posts: [],  //전체 데이터
+        filteredPosts: [] // 검색 조건에 맞는 데이터만 필터링된것
       },
       created: function () {
         //통신 
@@ -37,7 +40,14 @@
             .then(response => response.json())
             .then(function (json) {
               v.posts = json;
+              v.filteredPosts = json;
             })
+        }
+      }, 
+      watch: {
+        query: function(val) {
+          tihs.filteredPosts = this.posts.filter(post => post.title.includes(val))
+          
         }
       }
     })
